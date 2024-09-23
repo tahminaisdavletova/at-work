@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #eeeffc;
+    color: #383e6c;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: grid;
+    place-content: center;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.card-container{
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+}
+
+.card {
+    cursor: pointer;
+    background-color: #fff;
+    max-width: 22rem;
+    box-shadow: 1px 1px 13px -1px rgba(0,0,0,0.6);
+    border-radius: 4px;
+    transition: all 200ms ease;
+}
+
+.new card {
+    position: relative;
+}
+
+.new-card .new-tag {
+    background-color: #f85e8a;
+    color: #fff;
+    padding: .25rem;
+    position: absolute;
+    top: -25px;
+    left: 10px;
+    border: 4px;
+}
+
+.card .card-img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px 4px 0 0;
+}
+
+.card-content{
+    padding: 1.5rem;
+}
+
+.card-content h1{
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+.card-line {
+    width: 100%;
+    height: 1px;
+    background-color: #dcdcdc;
+    margin: 1rem 0;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.profile-info .profile-name {
+    margin-right: auto;
+}
+
+.profile-info .profile-img img{
+    width: 40px;
+    margin-right: .5rem;
+    border-radius: 50%;
+}
+
+.profile-info .profile-name .position,
+.profile-info .profile-date {
+    color: #8b8b8b;
+}
+
+.card:hover{
+    scale: 1.05;
+    box-shadow: 1px 1px 31px 1px rgba(0,0,0,0.6);
+}
